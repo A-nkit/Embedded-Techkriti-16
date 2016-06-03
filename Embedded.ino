@@ -41,7 +41,7 @@ void setup() {
 
 /********************This portion is taken from a website on Internet************************
 *********************to send analog data to esp through ADC chip via*************************
-*********************SPI protocol.***********************************************************
+*********************SPI protocol.**********************************************************/
 
 int read_adc(int channel) {
 	int adcvalue = 0;       //a variable to hold the digital value given by the ADC
@@ -74,7 +74,7 @@ int read_adc(int channel) {
 	digitalWrite(SELPIN, HIGH); //turn off device
 	return adcvalue;
 }
-********************************************************************************************/
+/*******************************************************************************************/
 
 int heart_rate(struct dat input[250]) {
 	int st,en,res;
